@@ -1,4 +1,4 @@
-
+(FOR DETAILED INSTRUCTIONS SEE instructions.txt)
 
 This Python script provides an interactive command-line interface for managing audio history data from the Eleven Labs API. It allows you to view, play, download, search, and delete audio files associated with your Eleven Labs account.
 
