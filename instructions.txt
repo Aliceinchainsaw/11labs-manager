@@ -1,0 +1,69 @@
+## Instructions to Use the Audio History Manager Script
+
+### Prerequisites
+
+1. **Python Installation**: Ensure you have Python 3.7 or higher installed on your system. You can download Python from the [official Python website](https://www.python.org/downloads/).
+
+2. **API Key**: Obtain your Eleven Labs API key from your Eleven Labs account. You'll need this key to authenticate your requests.
+
+### Setup
+
+1. **Clone the Repository**: Clone the repository containing the script to your local machine.
+
+   ```bash
+   git clone https://github.com/yourusername/your-repository.git
+   cd your-repository
+   ```
+
+2. **Install Dependencies**: Install the required Python packages using `pip` with the `requirements.txt` file.
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Configure API Key**: Open the script file (`main.py`) in a text editor and replace `"ENTERAPIKEY"` with your actual Eleven Labs API key.
+
+   ```python
+   API_KEY = "your_actual_api_key"
+   ```
+
+### Running the Script
+
+1. **Execute the Script**: Run the script using Python.
+
+   ```bash
+   python main.py
+   ```
+
+2. **Interactive Menu**: After running the script, you will be presented with a menu. Enter the corresponding number to choose an option:
+
+   - **1. View all audio metadata**: Display metadata for all audio history items.
+   - **2. Play an audio file**: Play an audio file by entering its history item ID.
+   - **3. Delete all history items**: Delete all audio history items in your account.
+   - **4. Download all files**: Download all audio files as a ZIP archive.
+   - **5. Search metadata by string**: Search metadata for a specific string and interact with matching files.
+   - **6. Exit**: Exit the program.
+
+3. **Follow the Prompts**: Depending on your selection, you may be prompted to enter additional information, such as a history item ID or search string.
+
+### Notes
+
+- **Audio Playback**: Ensure your system has audio output available if you plan to use the playback feature.
+- **Rate Limiting**: The script handles API rate limiting. If you exceed the rate limit, the script will automatically wait until it can make requests again.
+- **Error Handling**: The script includes basic error handling. If an issue arises, an error message will be displayed.
+
+### Example Usage
+
+1. **Viewing Metadata**: Select option `1` to view all audio metadata. This will display details about each audio file stored in your Eleven Labs account.
+
+2. **Playing an Audio File**: Select option `2`, enter the `history_item_id` when prompted, and the audio will play.
+
+3. **Downloading Files**: To download all audio files, select option `4`, and the files will be saved as a ZIP archive.
+
+### Troubleshooting
+
+- **Missing Dependencies**: If you encounter errors related to missing dependencies, make sure all required packages are installed by re-running `pip install -r requirements.txt`.
+- **Invalid API Key**: Double-check that you have entered the correct API key in the script.
+- **File Not Found**: Ensure the `history_item_id` you enter is correct and exists in your Eleven Labs account.
+
+With these instructions, you should be able to set up and use the Audio History Manager script effectively. If you encounter any issues, reviewing the script's output can provide insights into what might be wrong.
